@@ -1,3 +1,4 @@
+![](https://4.bp.blogspot.com/-CmVLJwymw8k/V8LNHmyvTTI/AAAAAAAAB3A/Ip9IWcnRj1g4GqXAPuZccqgxdJn0P_w9QCLcB/s1600/how_to_Create_custom_xaml_control_uwp_almir_vuk.png)
 In this tutorial I will demonstrate how to make your own custom control for Universal Windows Platform application. This is very handy way of making your app more modular and responsive. For this tutorial I will make "Speaker" control, for some of our conference or event App.  
 
 First we need to create new UWP App:  
