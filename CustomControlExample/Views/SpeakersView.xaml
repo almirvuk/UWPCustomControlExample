@@ -1,0 +1,43 @@
+﻿<Page x:Class="CustomControlExample.Views.SpeakersView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:CustomControlExample.Views"
+      xmlns:data="using:CustomControlExample.Models"
+      xmlns:customControl="using:CustomControlExample.CustomControls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+
+    <Grid Background="#EEEEEE">
+
+        <StackPanel>
+            <TextBlock Text="Speakers:"
+                       FontSize="36"
+                       Margin="16" />
+
+            <Rectangle Fill="LightGray"
+                       Height="3"
+                       Margin="16,0,16,0" />
+
+            <GridView VerticalAlignment="Top"
+                      HorizontalAlignment="Left"
+                      Margin="16"
+                      ItemsSource="{x:Bind speakersList}">
+
+                <GridView.ItemTemplate>
+                    <DataTemplate x:DataType="data:Speaker">
+
+                        <!-- Speaker -->
+                        <customControl:SpeakerControl PhotoURL="{x:Bind PhotoURL}"
+                                                      FirstName="{x:Bind FirstName}"
+                                                      LastName="{x:Bind LastName}"
+                                                      Company="{x:Bind Company}" />
+
+
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </StackPanel>
+    </Grid>
+
+</Page>
