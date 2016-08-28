@@ -78,4 +78,4 @@ And now my app looks like this:
 
 ![](https://3.bp.blogspot.com/-ARQR1rfS_i8/V8LBcUylOyI/AAAAAAAAB2s/papDDDsGLFQo3kMOwvXXSS5majvbtNG5gCLcB/s1600/uwp_8.png)
 
-And that is it... hope you find this tutorial helpful.
+And that is it, now we have our own custom XAML control and we can use it just like other controls, to add more properties to it, follow steps with Dependency Properties and you can add all kinds of properties in order to make it adaptive and responsive... hope you find this tutorial helpful.
